@@ -12,7 +12,7 @@ static class ExportPackage
                 "Assets/Resources",
                 "Assets/Scripts"
             },
-            "GameplayIngredients-Starter-LegacyRenderer.unitypackage",
+            "GameplayIngredients-Starter-HDRP.unitypackage",
             ExportPackageOptions.Recurse);
     }
 }
