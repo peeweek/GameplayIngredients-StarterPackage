@@ -9,10 +9,12 @@ static class ExportPackage
         AssetDatabase.ExportPackage(
             new string[]
             {
+                "Assets/Levels",
                 "Assets/Resources",
+                "Assets/Scenes",
                 "Assets/Scripts"
             },
-            "GameplayIngredients-Starter-LegacyRenderer.unitypackage",
+            "GameplayIngredients-Starter-XXXXX.unitypackage",
             ExportPackageOptions.Recurse);
     }
 }

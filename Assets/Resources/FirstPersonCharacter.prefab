@@ -184,8 +184,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cfde70461151044393814cb1c21024b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useKeyboardAndMouse: 1
-  useGamepad: 1
   LookExponent: 2
   MovementDeadZone: 0.15
   LookDeadZone: 0.15
