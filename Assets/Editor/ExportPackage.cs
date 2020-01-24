@@ -14,7 +14,7 @@ static class ExportPackage
                 "Assets/Scenes",
                 "Assets/Scripts"
             },
-            "GameplayIngredients-Starter-XXXXX.unitypackage",
+            "Packages\\net.peeweek.gameplay-ingredients\\StarterAssets\\GameplayIngredients-Starter-BuiltInRenderer.unitypackage",
             ExportPackageOptions.Recurse);
     }
 }
