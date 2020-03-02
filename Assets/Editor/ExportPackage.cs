@@ -14,7 +14,7 @@ static class ExportPackage
                 "Assets/Scenes",
                 "Assets/Scripts"
             },
-            "Packages\\net.peeweek.gameplay-ingredients\\StarterAssets\\GameplayIngredients-Starter-BuiltInRenderer.unitypackage",
+            "Packages\\net.peeweek.gameplay-ingredients\\StarterAssets\\GameplayIngredients-Starter-HDRP.unitypackage",
             ExportPackageOptions.Recurse);
     }
 }
