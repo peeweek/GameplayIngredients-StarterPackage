@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.unity.render-pipelines.universal": "7.1.8",
     "com.unity.timeline": "1.2.10",
     "com.unity.ugui": "1.0.0",
     "net.peeweek.gameplay-ingredients": "file:../../net.peeweek.gameplay-ingredients",
