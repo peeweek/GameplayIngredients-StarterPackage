@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 1203376030672308018}
   - component: {fileID: 1203376030672308019}
   - component: {fileID: 1203376030672308020}
-  - component: {fileID: 1203376030672308021}
+  - component: {fileID: 1217084860333092195}
   - component: {fileID: 1203376030672308017}
   m_Layer: 0
   m_Name: FirstPersonCharacter
@@ -161,18 +161,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Paused: 0
   m_Camera: {fileID: 1203376031101775135}
-  m_Input: {fileID: 1203376030672308021}
+  m_Input: {fileID: 1217084860333092195}
   PlayerHeight: 1.82
   PlayerRadius: 0.5
   PlayerWeight: 3
   MoveSpeed: 3
   MaximumFallVelocity: 12
-  TurnSpeed: 180
+  TurnSpeed: 360
   EnableJump: 1
   JumpImpulse: 7
-  PitchSpeed: 180
+  PitchSpeed: 360
   MaxPitch: 80
---- !u!114 &1203376030672308021
+--- !u!114 &1217084860333092195
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -181,18 +181,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1203376030672308022}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cfde70461151044393814cb1c21024b, type: 3}
+  m_Script: {fileID: 11500000, guid: e73f3aff63edd1b48a0603e93cba6fb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookExponent: 2
-  MovementDeadZone: 0.15
-  LookDeadZone: 0.15
   MovementHorizontalAxis: Horizontal
   MovementVerticalAxis: Vertical
-  LookHorizontalAxis: Look X
-  LookVerticalAxis: Look Y
-  MouseHorizontalAxis: Mouse X
-  MouseVerticalAxis: Mouse Y
+  LookHorizontalAxis: Mouse X
+  LookVerticalAxis: Mouse Y
   JumpButton: Jump
 --- !u!54 &1203376030672308017
 Rigidbody:
@@ -275,7 +270,5 @@ MonoBehaviour:
     m_OnCameraLive:
       m_PersistentCalls:
         m_Calls: []
-      m_TypeName: Cinemachine.CinemachineBrain+VcamActivatedEvent, Cinemachine, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 1203376030261627651}
