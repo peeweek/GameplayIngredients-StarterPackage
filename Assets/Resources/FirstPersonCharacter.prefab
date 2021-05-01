@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_NoiseProfile: {fileID: 11400000, guid: 188630c3155de5b42a7f322c9c6a446a, type: 2}
+  m_NoiseProfile: {fileID: 0}
   m_PivotOffset: {x: 0, y: 0, z: 0}
   m_AmplitudeGain: 1
   m_FrequencyGain: 1
@@ -202,97 +202,97 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e73f3aff63edd1b48a0603e93cba6fb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  preferLegacyInputManager: 0
+  preferLegacyInput: 0
   move:
-    m_Name: Move
+    m_Name: Left Stick
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 6d204e42-91c1-4446-b7b5-ec843f15181a
+    m_Id: 78262303-6c30-440d-b87f-5a455bb7c221
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
-    - m_Name: KB-WASD
-      m_Id: f1747939-bc90-477c-970a-12c9ddd7a568
-      m_Path: 2DVector
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move
-      m_Flags: 4
-    - m_Name: up
-      m_Id: 76b6b450-bfb6-405a-8d98-243b5e277eb5
-      m_Path: <Keyboard>/w
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move
-      m_Flags: 8
-    - m_Name: down
-      m_Id: ce7509c0-dfed-49a7-8454-8232ec997df7
-      m_Path: <Keyboard>/s
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move
-      m_Flags: 8
-    - m_Name: left
-      m_Id: 5a394d16-a846-45e7-9575-787154ff9042
-      m_Path: <Keyboard>/a
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move
-      m_Flags: 8
-    - m_Name: right
-      m_Id: d350b675-1321-474d-a824-17df0e5b8710
-      m_Path: <Keyboard>/d
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move
-      m_Flags: 8
     - m_Name: 
-      m_Id: 89d887a2-012e-4332-97dd-43a8656e553c
+      m_Id: 374a17f1-27af-435d-adcb-77f4afc0fd97
       m_Path: <Gamepad>/leftStick
       m_Interactions: 
       m_Processors: 
       m_Groups: 
-      m_Action: Move
+      m_Action: Left Stick
       m_Flags: 0
+    - m_Name: 
+      m_Id: ca91ff32-e98f-41f9-8d27-0865d7c7542f
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Left Stick
+      m_Flags: 4
+    - m_Name: Up
+      m_Id: 94b42695-a265-4b17-8f05-6888706a5b41
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Left Stick
+      m_Flags: 8
+    - m_Name: Down
+      m_Id: 1ba0c741-3a6b-4ef0-9d5a-48e0049b09bb
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Left Stick
+      m_Flags: 8
+    - m_Name: Left
+      m_Id: 5f1b09fb-3c16-4955-89a6-9b80511c9160
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Left Stick
+      m_Flags: 8
+    - m_Name: Right
+      m_Id: 62b1165a-9579-4276-a12c-3ae37be7940d
+      m_Path: <Keyboard>/d
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Left Stick
+      m_Flags: 8
   look:
-    m_Name: Look
+    m_Name: Right Stick
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 361632aa-8ef7-4d10-869e-013c8996aa5f
+    m_Id: 03cb4cd5-eec0-4b4f-939a-43151fecb4db
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
-      m_Id: dbdc26a8-23ce-465d-80c6-fa5bd7fc1851
-      m_Path: <Pointer>/delta
-      m_Interactions: 
-      m_Processors: ScaleVector2(x=0.1,y=0.1)
-      m_Groups: 
-      m_Action: Look
-      m_Flags: 0
-    - m_Name: 
-      m_Id: fd5c4858-c65a-49d0-b819-0f6a7e6a0bd5
+      m_Id: ed421107-c8c8-407c-bf7a-20969f7e60af
       m_Path: <Gamepad>/rightStick
       m_Interactions: 
       m_Processors: 
       m_Groups: 
-      m_Action: Look
+      m_Action: Right Stick
+      m_Flags: 0
+    - m_Name: 
+      m_Id: dd76736c-4d9f-42d0-ae66-878483cdce4d
+      m_Path: <Pointer>/Delta
+      m_Interactions: 
+      m_Processors: ScaleVector2(x=0.1,y=0.1)
+      m_Groups: 
+      m_Action: Right Stick
       m_Flags: 0
   jump:
     m_Name: Jump
     m_Type: 1
-    m_ExpectedControlType: Button
-    m_Id: 0d9f3ddf-b3ba-4c99-8358-da7a25da2977
+    m_ExpectedControlType: 
+    m_Id: f931776e-d3e9-4c3c-b50c-6612bc4d9c99
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
-      m_Id: 8e3723b2-b34a-44ae-82d0-2ff642d0d333
+      m_Id: f8a98adf-5a04-4678-9a76-a60fbe4e7ab3
       m_Path: <Gamepad>/buttonSouth
       m_Interactions: 
       m_Processors: 
@@ -300,7 +300,7 @@ MonoBehaviour:
       m_Action: Jump
       m_Flags: 0
     - m_Name: 
-      m_Id: eb5e89d2-d50e-4e32-bcf0-0708716e7ad0
+      m_Id: 6a75d1af-654f-47a6-9a30-857ecc80a844
       m_Path: <Keyboard>/space
       m_Interactions: 
       m_Processors: 
