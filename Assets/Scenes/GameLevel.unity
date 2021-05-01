@@ -1486,7 +1486,7 @@ GameObject:
   - component: {fileID: 1461980671}
   - component: {fileID: 1461980670}
   m_Layer: 0
-  m_Name: On Key Down (Escape) - Exit
+  m_Name: On Key Down (Escape) - Return to Menu
   m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
