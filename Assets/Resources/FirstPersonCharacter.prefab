@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1203376030261627648}
   - component: {fileID: 1203376030261627649}
   - component: {fileID: 1203376030261627650}
+  - component: {fileID: 9076537488727344852}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -94,6 +95,23 @@ MonoBehaviour:
   m_YawDamping: 0
   m_RollDamping: 0
   m_AngularDamping: 0
+--- !u!114 &9076537488727344852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203376030261627652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NoiseProfile: {fileID: 11400000, guid: 188630c3155de5b42a7f322c9c6a446a, type: 2}
+  m_PivotOffset: {x: 0, y: 0, z: 0}
+  m_AmplitudeGain: 1
+  m_FrequencyGain: 1
+  mNoiseOffsets: {x: -938.8635, y: -285.17496, z: -509.71887}
 --- !u!1 &1203376030672308022
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,10 +185,10 @@ MonoBehaviour:
   PlayerWeight: 3
   MoveSpeed: 3
   MaximumFallVelocity: 12
-  TurnSpeed: 360
+  TurnSpeed: 180
   EnableJump: 1
   JumpImpulse: 7
-  PitchSpeed: 360
+  PitchSpeed: 180
   MaxPitch: 80
 --- !u!114 &1217084860333092195
 MonoBehaviour:
@@ -184,105 +202,105 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e73f3aff63edd1b48a0603e93cba6fb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  preferLegacyInput: 0
+  preferLegacyInputManager: 0
   move:
-    m_Name: Left Stick
+    m_Name: Move
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 4f2c16aa-d8de-452a-8561-863b0f921bf4
+    m_Id: 6d204e42-91c1-4446-b7b5-ec843f15181a
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 35851fa7-c636-462e-aa8b-537b99d0c2c9
-      m_Path: <Gamepad>/Left Stick
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Left Stick
-      m_Flags: 0
-    - m_Name: 
-      m_Id: ac861e29-9015-4698-b9cf-4605156774a3
+    - m_Name: KB-WASD
+      m_Id: f1747939-bc90-477c-970a-12c9ddd7a568
       m_Path: 2DVector
       m_Interactions: 
       m_Processors: 
       m_Groups: 
-      m_Action: Left Stick
+      m_Action: Move
       m_Flags: 4
-    - m_Name: Up
-      m_Id: e6467d1a-40dc-4600-97bb-cab3cc71ea7b
+    - m_Name: up
+      m_Id: 76b6b450-bfb6-405a-8d98-243b5e277eb5
       m_Path: <Keyboard>/w
       m_Interactions: 
       m_Processors: 
       m_Groups: 
-      m_Action: Left Stick
+      m_Action: Move
       m_Flags: 8
-    - m_Name: Down
-      m_Id: 9ec9bb59-2463-4b09-a5ef-a24e85e47466
+    - m_Name: down
+      m_Id: ce7509c0-dfed-49a7-8454-8232ec997df7
       m_Path: <Keyboard>/s
       m_Interactions: 
       m_Processors: 
       m_Groups: 
-      m_Action: Left Stick
+      m_Action: Move
       m_Flags: 8
-    - m_Name: Left
-      m_Id: 517cf1c6-7e20-49ff-9934-66954b16ef7b
+    - m_Name: left
+      m_Id: 5a394d16-a846-45e7-9575-787154ff9042
       m_Path: <Keyboard>/a
       m_Interactions: 
       m_Processors: 
       m_Groups: 
-      m_Action: Left Stick
+      m_Action: Move
       m_Flags: 8
-    - m_Name: Right
-      m_Id: a062a4bd-766a-4cb6-8023-bee45751e04a
+    - m_Name: right
+      m_Id: d350b675-1321-474d-a824-17df0e5b8710
       m_Path: <Keyboard>/d
       m_Interactions: 
       m_Processors: 
       m_Groups: 
-      m_Action: Left Stick
+      m_Action: Move
       m_Flags: 8
+    - m_Name: 
+      m_Id: 89d887a2-012e-4332-97dd-43a8656e553c
+      m_Path: <Gamepad>/leftStick
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 0
   look:
-    m_Name: Right Stick
+    m_Name: Look
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 11fc35bd-e557-472e-8572-317fa7b1abc8
+    m_Id: 361632aa-8ef7-4d10-869e-013c8996aa5f
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
-      m_Id: e6a1b815-e029-4dc3-a737-06a0709915fa
-      m_Path: <Gamepad>/Right Stick
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Right Stick
-      m_Flags: 0
-    - m_Name: 
-      m_Id: e6e12747-3b19-48df-aa2d-7ffd011254f4
-      m_Path: <Pointer>/Delta
+      m_Id: dbdc26a8-23ce-465d-80c6-fa5bd7fc1851
+      m_Path: <Pointer>/delta
       m_Interactions: 
       m_Processors: ScaleVector2(x=0.1,y=0.1)
       m_Groups: 
-      m_Action: Right Stick
+      m_Action: Look
+      m_Flags: 0
+    - m_Name: 
+      m_Id: fd5c4858-c65a-49d0-b819-0f6a7e6a0bd5
+      m_Path: <Gamepad>/rightStick
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Look
       m_Flags: 0
   jump:
     m_Name: Jump
     m_Type: 1
-    m_ExpectedControlType: 
-    m_Id: e6e8606c-c520-4aaa-a3b9-4ebebdf37ccc
+    m_ExpectedControlType: Button
+    m_Id: 0d9f3ddf-b3ba-4c99-8358-da7a25da2977
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
-      m_Id: 0c41ad81-f327-4d2c-9e15-07ddb73981ea
-      m_Path: <Gamepad>/Button South
+      m_Id: 8e3723b2-b34a-44ae-82d0-2ff642d0d333
+      m_Path: <Gamepad>/buttonSouth
       m_Interactions: 
       m_Processors: 
       m_Groups: 
       m_Action: Jump
       m_Flags: 0
     - m_Name: 
-      m_Id: 9e991fb0-c322-43f0-aaec-996ca47f9687
+      m_Id: eb5e89d2-d50e-4e32-bcf0-0708716e7ad0
       m_Path: <Keyboard>/space
       m_Interactions: 
       m_Processors: 
@@ -363,7 +381,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
-    FieldOfView: 60
+    FieldOfView: 70
     OrthographicSize: 10
     NearClipPlane: 0.1
     FarClipPlane: 5000
